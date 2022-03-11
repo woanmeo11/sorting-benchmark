@@ -36,7 +36,7 @@ void read_testcase(int test_number) {
     ans.close();
 }
 
-// return runtime of sorting function
+// return runtime of sorting function in milisecond
 double benchmark(void (*sort_func)(long long arr[], int n)) {
     for (int i = 0; i < n; ++i)
         temp_arr[i] = raw_input[i];
@@ -48,7 +48,7 @@ double benchmark(void (*sort_func)(long long arr[], int n)) {
     for (int i = 0; i < n; ++i)
         assert(temp_arr[i] == sorted_arr[i]);
 
-    return double(t_end - t_begin) / CLOCKS_PER_SEC;
+    return double(t_end - t_begin) * 1000 / CLOCKS_PER_SEC;
 }
 
 #define print(s) cout << "│ " << left << setw(10) << s;
