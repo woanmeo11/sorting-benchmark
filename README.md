@@ -22,6 +22,7 @@ The first two test cases are increasing array and decreasing array. The others a
 | 7         | 72.328    | 140.056   | 79.401    | 50.185
 | 8         | 72.419    | 143.849   | 79.554    | 50.125
 | 9         | 72.066    | 141.267   | 79.352    | 50.92
+| Average   | 62.7387   | 123.3458  | 68.2686   | 41.6916
 
 ### Chart of execution time:
 
